@@ -52,7 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TEST }}
         with:
-          tag_name: build-${{ steps.sha.outputs.sha_short }}
+          tag_name: build123
           release_name: |
             Build #${{ steps.sha.outputs.sha_short }}
           body: |
