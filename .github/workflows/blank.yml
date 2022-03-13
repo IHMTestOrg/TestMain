@@ -44,7 +44,7 @@ jobs:
           draft: false
           prerelease: true
           owner: IHMTestOrg
-          repo: TestReleases
+          repo: TestMain
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
