@@ -52,7 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TEST }}
         with:
-          tag_name: build123
+          tag_name: abcdefg
           release_name: |
             Build #${{ steps.sha.outputs.sha_short }}
           body: |
@@ -61,7 +61,7 @@ jobs:
           draft: false
           prerelease: true
           owner: IHMTestOrg
-          repo: TestReleases
+          repo: TestMain
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
